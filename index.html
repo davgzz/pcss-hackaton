@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best NBA MVPs</title>
+
+    <!-- Inline CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #00000; /* true black */
+        }
+
+        header {
+            background-color: #FF0000; /* true Red color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #f4f4f4; /* Light grey background */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #C810bl2E; /* black color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .logo {
+            width: 100px; /* Adjust logo size */
+            margin: 10px 0;
+        }
+
+        .button {
+            background-color: #C8102E; /* black color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #FF0000; /* true black */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="data:image/jpeg;base64,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" alt="Basketball Logo" class="logo">
+        <h1>Best NBA MVPs</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to the Best NBA MVPs during the 2000's</h2>
+        <p>Explore the players who have made a significant impact in the NBA by winning the MVP award!</p>
+        <button class="button" onclick="location.href='mvp1.html'">Kevin Durant</button>
+        <button class="button" onclick="location.href='mvp2.html'">LeBron James</button>
+        <button class="button" onclick="location.href='mvp3.html'">James Harden</button>
+        <button class="button" onclick="location.href='mvp4.html'">Russell Westbrook</button>
+        <button class="button" onclick="location.href='mvp5.html'">Giannis Antetokounmpo</button>
+         <button class="button" onclick="location.href='mvp6.html'">Stephen Curry</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Best NBA MVPs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
